@@ -207,7 +207,7 @@ footer {
 
     .menu-toggle {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
     }
@@ -216,7 +216,7 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 10px;
         left: 0;
         right: 0;
         background-color: #2c3e50;
