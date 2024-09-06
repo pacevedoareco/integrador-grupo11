@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Portfolio Pablo Acevedo Areco</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pablo Acevedo Areco</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">Sobre mí</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2>Servicios</h2>
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web profesionales y a medida para tu negocio.</p>
+
+            <h3>Programación de Aplicaciones Web y Móviles</h3>
+            <p>Desarrollo de aplicaciones innovadoras que satisfacen las necesidades de los usuarios.</p>
+
+            <h3>Marketing</h3>
+            <p>Estrategias de marketing digital para mejorar la visibilidad de tu marca en línea.</p>
+
+            <h3>Posicionamiento de Marca</h3>
+            <p>Ayuda para construir y posicionar tu marca en el mercado.</p>
+
+            <h3>Asesoramiento de Imagen Corporativa</h3>
+            <p>Asesoría en la creación de una imagen corporativa sólida y coherente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pablo Acevedo Areco</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

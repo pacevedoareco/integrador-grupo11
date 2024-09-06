@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pablo Acevedo Areco</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pablo Acevedo Areco</h1>
+    </header>
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">Sobre mí</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2>Bienvenido a mi portafolio</h2>
+            <p>Hola, soy Pablo Acevedo Areco, un apasionado del desarrollo web y la tecnología.</p>
+            <p>Ofrezco servicios de desarrollo web, programación de aplicaciones web y móviles, marketing digital, posicionamiento de marca y asesoramiento de imagen corporativa.</p>
+            <img src="foto-presentacion.jpg" alt="Pablo Acevedo Areco" width="300">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pablo Acevedo Areco</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

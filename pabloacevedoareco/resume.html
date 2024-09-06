@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Portfolio Pablo Acevedo Areco</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pablo Acevedo Areco</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">Sobre mí</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2>Currículum</h2>
+            <h3>Experiencia Laboral</h3>
+            <ul>
+                <li>Docente de programación Java en ADAITW (2020 - 2021)</li>
+                <li>Profesor de carreras de programación y seguridad en EducaciónIT (2014 - 2018)</li>
+                <li>Arquitecto Web en IBM Argentina (2011 - 2018)</li>
+                <li>Programador Web en IBM Argentina (2009 - 2011)</li>
+                <li>Analista de Sistemas en XEVEN (2008 - 2018)</li>
+            </ul>
+
+            <h3>Educación</h3>
+            <p>Licenciatura en gestión de TI - UADE (2024)</p>
+
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Desarrollo Web (HTML, CSS, JavaScript)</li>
+                <li>Programación (Python, Java)</li>
+                <li>Marketing Digital</li>
+            </ul>
+
+            <p><a href="cv.pdf" download>Descargar CV en PDF</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pablo Acevedo Areco</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
