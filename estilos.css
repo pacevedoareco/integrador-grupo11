@@ -167,6 +167,9 @@ footer {
         margin: 0;
         padding: 0;
     }
+    .container p {
+        padding: 20px;
+    }
     .container h2, .hero-text{
         padding-left: 20px;
     }
