@@ -88,21 +88,32 @@ h2 {
 p {
     margin-bottom: 1rem;
 }
+.hero{overflow: hidden;}
 .hero-image {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg") center center / cover no-repeat;
-  position: absolute; left: 0; right: 0;
-  height: 50vh;
-  width: 100%;
-}
-.hero-text {
-  text-align: center;
   position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  right: 0; 
+  height: 30vh;
+  width: 45%;
+  float: right;
 }
-.hero-text h1, .hero-text p{color:white;text-shadow: 2px 2px #000000;}
+.hero-text {
+  text-align: justify;
+  position: relative;
+  top: 50%;
+  left: 0;
+  width: 45%;
+  float: left;
+}
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .team-member {
     display: flex;
     flex-direction: column;
@@ -276,6 +287,10 @@ footer {
     .container h2, .hero-text{
         padding-left: 20px;
     }
+    .hero-text{
+        width: 100%;
+        float: none;
+    }
     .footer-content{
         padding: 0 15px;
         display: block;
@@ -285,7 +300,9 @@ footer {
     }
     .hero-image {
         position: relative;
-        height: 70vh;
+        float: none;
+        width: 80%;
+        margin: 0 auto;
     }
     .team-member {
         flex-direction: column;
