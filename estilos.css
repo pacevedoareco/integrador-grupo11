@@ -423,6 +423,96 @@ blockquote {
 /********* Fin de estilos Ignacio (portafolio) *********/
 /*************************************************************/
 
+/*************************************************************/
+/********* Inicio de estilos Luciano *********/
+/*************************************************************/
+
+.soporte-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 80px;
+}
+
+.soporte-top-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.soporte-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.soporte-top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.soporte-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.icon-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #3A6073;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+.icon-circle.small {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3A6073;
+    margin-bottom: 20px;
+    cursor:auto;
+}
+.small {
+    flex-direction: row;
+}
+
+.item-content {
+    text-align: center;
+}
+.background-soporte-cuadros{
+    background-color: #ccc;
+}
+
+.soporte-item h3 {
+    color: #3A6073;
+    margin-bottom: 5px;
+    font-size: 18px; 
+}
+
+.soporte-item p {
+    color: #333;
+    margin-left: 1rem;
+    font-size: 14px; 
+}
+
+.padding-desc-soporte{
+    padding-top: 40px;
+}
+.margin-bot-2{
+    margin-bottom: 2rem;
+}
+/*************************************************************/
+/********* Fin de estilos Luciano *********/
+/*************************************************************/
+
+
 
 @media (min-width: 769px) {
     .miembros {
@@ -526,7 +616,7 @@ blockquote {
     .container_2 {
         width: 85vw;
         max-height: (50vh);
-}
+    }
     .container_tech {
         margin-top: 1rem;
     }
@@ -550,4 +640,50 @@ blockquote {
         margin-bottom: 15px; 
     }
     /* Fin seccion nahuel */
+    /* Inicio seccion luciano */
+    .soporte-container {
+        margin: 0 auto; 
+        padding: 20px 10px;
+    }
+    
+    .padding-desc-soporte{
+        padding-top: 20px;
+    }
+
+    .soporte-top {
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 10px 0px;
+    }
+
+    .soporte-top-container{
+        width: 90%;
+        padding: 10px 0px;
+    }
+
+    .soporte-item{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .icon-circle {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .icon-circle.small {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .soporte-bottom {
+        grid-template-columns: 1fr;
+    }
+    .small{
+        flex-direction: column;
+    }
+    /* Fin seccion luciano */
 }
