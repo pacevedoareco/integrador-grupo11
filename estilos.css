@@ -247,6 +247,7 @@ footer {
 /*************************************************************/
 /********* Estilos Nahuel *********/
 /*************************************************************/
+
 .servicios-grid {
     display: flex; 
     justify-content: space-between; 
@@ -254,6 +255,7 @@ footer {
     text-align: center; 
     margin: 0 auto;
     padding: 20px;
+    flex-wrap: wrap; 
 }
 
 .servicio {
@@ -273,7 +275,7 @@ footer {
     margin-bottom: 15px; 
 }
 
-.servicio h2 {
+.servicio h3 {
     margin: 10px 0; 
     font-size: 1.5rem; 
 }
@@ -287,6 +289,7 @@ footer {
     display: flex;
     justify-content: space-around; 
     margin: 20px 0; 
+    flex-wrap: wrap; 
 }
 
 .testimonio-segmento {
@@ -296,6 +299,7 @@ footer {
     padding: 15px; 
     width: 45%; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin: 10px 0;
 }
 
 blockquote {
@@ -308,9 +312,117 @@ blockquote {
     text-align: right; 
     margin-top: 10px; 
 }
+
+@media (max-width: 768px) {
+    .servicios-grid {
+        justify-content: center;
+    }
+
+    .servicio {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .testimonio-segmento {
+        width: 100%; 
+    }
+}
+
 /*************************************************************/
 /********* Fin de estilos Nahuel *********/
 /*************************************************************/
+
+/*************************************************************/
+/********* Inicio de estilos Ignacio (portafolio) *********/
+/*************************************************************/
+
+.container_1 {
+    width: 90%;
+    max-width: 75rem; 
+    margin: 2rem auto 0 auto;
+    padding: 0 2rem;
+}
+
+.main_portafolio {
+    width: 90%;
+    max-width: 75rem; 
+    margin: 0 auto 0 auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; 
+}
+
+.card-body {
+    font-size: 1.125rem; 
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1.7rem;
+}
+
+.row {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
+    margin: 3rem 0 0rem;
+}
+
+.card {
+    width: 100%; 
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.portafolio_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.portafolio_text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    text-align: justify; 
+    width: 100%;
+    padding: 1rem;
+}
+
+.container_2 {
+    width: 90%;
+    max-width: 75rem; 
+    margin: 0 auto 5rem auto;
+    min-height: 20vh;
+}
+
+.portafolio_title_tech {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.container_tech {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; 
+    width: 100%;
+    padding: 1rem; 
+}
+
+.tecnologia {
+    display: flex;
+    width: 5rem;
+    height: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*************************************************************/
+/********* Fin de estilos Ignacio (portafolio) *********/
+/*************************************************************/
+
 
 @media (min-width: 769px) {
     .miembros {
@@ -383,4 +495,59 @@ blockquote {
     }
     footer{position: relative;}
     .footer-logo{ padding:30px 35px; margin: 0 auto;}
+        /* Seccion Portafolio Ignacio */
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .container_tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portafolio_title {
+        font-size: 1.25rem; 
+    }
+    .portafolio_text {
+        font-size: 1rem; 
+    }
+
+    .portafolio_title_tech {
+        font-size: 1.25rem; 
+    }
+
+    .row {
+        padding: 1rem;
+    }
+
+    .tecnologia {
+        width: 4rem; 
+        height: 3.5rem; 
+    }
+
+    .container_2 {
+        width: 85vw;
+        max-height: (50vh);
+}
+    .container_tech {
+        margin-top: 1rem;
+    }
+    /* Fin Seccion Portafolio Ignacio */
+    /* Inicio seccion Nahuel */
+    .servicio h3 {
+        font-size: 1.2rem; 
+    }
+
+    .servicio p {
+        font-size: 0.9rem;
+    }
+
+    .testimonios {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .testimonio-segmento {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+    /* Fin seccion nahuel */
 }
