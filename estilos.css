@@ -90,7 +90,7 @@ p {
 }
 .hero{overflow: hidden;}
 .hero-image {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg") center center / cover no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/hero.jpg") center center / cover no-repeat;
   position: relative;
   top: 50%;
   right: 0; 
