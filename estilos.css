@@ -69,10 +69,23 @@ nav ul li a:not(.logo):hover{
 .activo{
     background-color: #497FB7;
 }
-
+.mainPortfolio {
+    width: 90%;
+    max-width: 75rem; 
+    margin: 0 auto 2rem auto;
+    margin-bottom: 150px;
+}
 main {
     padding: 2rem 0;
     margin-bottom: 150px;
+}
+.container_1 {
+    width: 90%;
+    max-width: 75rem; 
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+    background-color: #f0f0f0;
+    border: 0.0625rem solid #393333;
 }
 h1 {
     font-size: 2.5rem;
@@ -351,27 +364,56 @@ blockquote {
 
 .card-img-top {
     width: 100%;
-    height: auto; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.65);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.65);
 }
 
 .card-body {
     font-size: 1.125rem; 
     font-family: 'Times New Roman', Times, serif;
-    padding: 1.7rem;
+    padding: 2.5rem;
+}
+.card-title {
+    margin: 0; 
+}
+.card-header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
 }
 
+.boton_web {
+    padding: 0.5rem; 
+    margin-left: 0.75rem;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.boton_web:hover {
+    background-color: #0056b3; 
+}
 .row {
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
     gap: 2rem; 
-    margin: 3rem 0 0rem;
+    margin: 4rem 0 2rem;
 }
 
 .card {
-    width: 100%; 
+    width: 100%;
+    border: 0.0625rem solid #393333;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 2.5rem;
+    padding: 1.2rem;
+    background-color: #f0f0f0;
+    min-height: 400px; 
 }
 
 .portafolio_title {
@@ -393,8 +435,18 @@ blockquote {
 .container_2 {
     width: 90%;
     max-width: 75rem; 
-    margin: 0 auto 5rem auto;
-    min-height: 20vh;
+    margin: 3rem auto 2rem auto;
+    padding: 0 2rem;
+    background-color: #f0f0f0;
+    border: 0.0625rem solid #393333;
+}
+
+.container_tech {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; 
+    width: 100%; 
+    margin: 1rem auto;
 }
 
 .portafolio_title_tech {
@@ -403,20 +455,13 @@ blockquote {
     font-size: 1.5rem;
 }
 
-.container_tech {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem; 
-    width: 100%;
-    padding: 1rem; 
-}
-
 .tecnologia {
     display: flex;
     width: 5rem;
     height: 4.5rem;
+    margin-bottom: 1rem;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 /*************************************************************/
@@ -512,22 +557,12 @@ blockquote {
 /********* Fin de estilos Luciano *********/
 /*************************************************************/
 
-
-
-@media (min-width: 769px) {
-    .miembros {
-        grid-template-columns: repeat(5, 1fr);
-    }
+@media (min-width: 835px){
     #hamburguesa input, #hamburguesa span{
         display: none;
     }
 }
-/* lo siguiente es solo para mobile */
-@media (max-width: 768px) {
-    .miembros {
-        grid-template-columns: 1fr;
-        margin: 35px 15px;
-    }
+@media (max-width: 834px){
     nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -546,7 +581,18 @@ blockquote {
         width: 100%;
         display: inline-block;
     }
-
+}
+@media (min-width: 769px) {
+    .miembros {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+/* lo siguiente es solo para mobile */
+@media (max-width: 768px) {
+    .miembros {
+        grid-template-columns: 1fr;
+        margin: 35px 15px;
+    }
     .container{
         width: 100%;
         margin: 0;
@@ -583,7 +629,7 @@ blockquote {
         margin-right: 0;
         margin-bottom: 1rem;
     }
-    footer{position: relative;}
+    footer {position: relative;}
     .footer-logo{ padding:30px 35px; margin: 0 auto;}
         /* Seccion Portafolio Ignacio */
     .row {
@@ -615,7 +661,7 @@ blockquote {
 
     .container_2 {
         width: 85vw;
-        max-height: (50vh);
+        max-height: 50vh;
     }
     .container_tech {
         margin-top: 1rem;
@@ -687,3 +733,49 @@ blockquote {
     }
     /* Fin seccion luciano */
 }
+/* mobile nacho */
+@media (max-width: 1200px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .container_tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .portafolio_title {
+        font-size: 1.25rem; 
+    }
+    .portafolio_text {
+        font-size: 1rem; 
+    }
+
+    .row {
+        padding: 1rem;
+    }
+
+    .tecnologia {
+        width: 4rem; 
+        height: 3.5rem; 
+    }
+
+    .container_2 {
+        width: 85vw;
+        max-height: 50vh;
+    }
+    .container_tech {
+        margin-top: 2rem;
+    }
+
+}
+/* mobile nacho FIN */
